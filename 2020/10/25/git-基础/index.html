@@ -6,18 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>newPage | MeiLinai</title>
+  <title>git-基础 | MeiLinai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客">
-<meta name="keywords" content="小白博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="newPage">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;newPage&#x2F;index.html">
+  <meta name="description" content="git版本控制基础内容">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git-基础">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;10&#x2F;25&#x2F;git-%E5%9F%BA%E7%A1%80&#x2F;index.html">
 <meta property="og:site_name" content="MeiLinai">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="git版本控制基础内容">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-02T13:29:29.445Z">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201009073951965.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201009111700836.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201009112116976.png">
+<meta property="og:updated_time" content="2020-10-25T13:10:01.842Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201009073951965.png">
   
     <link rel="alternative" href="/atom.xml" title="MeiLinai" type="application/atom+xml">
   
@@ -149,27 +153,67 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-git-基础" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      newPage
+      git-基础
     </h1>
   
 
         
-        <a href="/newPage/index.html" class="archive-article-date">
-  	<time datetime="2019-12-02T13:29:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+        <a href="/2020/10/25/git-%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2020-10-25T12:49:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="git版本控制基础内容"><a href="#git版本控制基础内容" class="headerlink" title="git版本控制基础内容"></a>git版本控制基础内容<a id="more"></a></h4><h5 id="版本控制应具备的功能"><a href="#版本控制应具备的功能" class="headerlink" title="版本控制应具备的功能"></a>版本控制应具备的功能</h5><p>协同修改、数据备份、版本管理、权限控制、历史记录、分支管理</p>
+<h5 id="git结构"><a href="#git结构" class="headerlink" title="git结构"></a>git结构</h5><p>工作区——&gt;暂存区——&gt;本地库</p>
+<h5 id="本地库和远程库的交互方式push-pull-fork-merge-clone"><a href="#本地库和远程库的交互方式push-pull-fork-merge-clone" class="headerlink" title="本地库和远程库的交互方式push pull fork merge clone"></a>本地库和远程库的交互方式push pull fork merge clone</h5><p>1.团队内部协作<br>2.跨团队协作</p>
+<h3 id="一、Git命令行操作"><a href="#一、Git命令行操作" class="headerlink" title="一、Git命令行操作"></a>一、Git命令行操作</h3><h4 id="1、本地库操作"><a href="#1、本地库操作" class="headerlink" title="1、本地库操作"></a>1、本地库操作</h4><hr>
+<h5 id="1）本地库初始化"><a href="#1）本地库初始化" class="headerlink" title="1）本地库初始化"></a>1）本地库初始化</h5><p>项目目录下执行git init</p>
+<h5 id="2）设置签名：用户名和Email地址（eamil没有什么用）"><a href="#2）设置签名：用户名和Email地址（eamil没有什么用）" class="headerlink" title="2）设置签名：用户名和Email地址（eamil没有什么用）"></a>2）设置签名：用户名和Email地址（eamil没有什么用）</h5><p>项目/仓库级别：仅在当前本地库范围有效（优先级更高）<br>系统用户级别：登录当前操作系统的用户范围（加–global）<br>git config –global user.name xft<br>git config –global user.email <a href="mailto:xft@qq.com" target="_blank" rel="noopener">xft@qq.com</a></p>
+<p>全局配置存放在家目录的/.gitconfig文件里</p>
+<h5 id="3）添加提交以及查看操作状态"><a href="#3）添加提交以及查看操作状态" class="headerlink" title="3）添加提交以及查看操作状态"></a>3）添加提交以及查看操作状态</h5><p>git status：查看工作区状态<br>git add 文件名：将文件放到暂存区（若已经有了就更新它）<br>git rm –cached 文件名：将文件从暂存区撤回<br>git commit [-m “更改说明”] 文件名：将文件从暂存区提交的本地库<br>git checkout –文件名：取消对文件的更改<br>git log [–pretty=oneline]：查看版本更新日志<br>git log –oneline<br>git reflog</p>
+<h5 id="4）前进后退版本（基于索引、-、-）推荐使用索引"><a href="#4）前进后退版本（基于索引、-、-）推荐使用索引" class="headerlink" title="4）前进后退版本（基于索引、^、~）推荐使用索引"></a>4）前进后退版本（基于索引、^、~）推荐使用索引</h5><p>索引：<br>回到指定索引的版本：git reset –hard 索引值<br>^、<del>：只能后退：<br>git reset –hard HEAD^    表示往回退一步（^的数量决定退的步数）<br>git reset –hard HEAD</del>3    表示往回退三不（^后的的数字决定退的步数）<br>reset的三个参数对比<br>–soft：仅仅在本地库移动HEAD指针<br>–mixed：在本地库移动HEAD指针、重置暂存区<br>–hard：在本地库移动HEAD指针、重置暂存区、重置工作区</p>
+<h5 id="5）永久删除文件后的找回"><a href="#5）永久删除文件后的找回" class="headerlink" title="5）永久删除文件后的找回"></a>5）永久删除文件后的找回</h5><p>前提：文件存在时的状态提交到了本地库<br>操作：git reset –hard [指针位置]<br>删除操作已提交到本地库：指针位置指向历史记录<br>删除操作未提交到本地库：指针位置使用HEAD</p>
+<h5 id="6）比较文件差异"><a href="#6）比较文件差异" class="headerlink" title="6）比较文件差异"></a>6）比较文件差异</h5><p>git diff：表示和暂存区进行比较<br>git diff HEAD：表示和本地库当前指向进行比较<br>git diff HEAD^ 文件名：表示和某个历史版本进行比较</p>
+<h5 id="7）分支管理"><a href="#7）分支管理" class="headerlink" title="7）分支管理"></a>7）分支管理</h5><p>分支：版本控制中，使用多条线同时推进多个任务<br>分支的好处：并行的推进功能的开发、失败的分支对其他分支没有影响<br>git branch -v        查看所有的分支<br>git branch 分支名        创建新的分支<br>git checkout  分支名        切换分支</p>
+<h5 id="——合并分支"><a href="#——合并分支" class="headerlink" title="——合并分支"></a>——合并分支</h5><p>1.切换分支：    git checkout 分支名<br>2.执行merge命令    git merge 分支名    表示该分支合并到当前分支<br>——解决分支冲突<br><em>冲突的表现</em><br>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>aaabbb            当前分支内容</p>
+<p>aaabbb</p>
+<p>bbbaaa            另外分支内容<br>bbbaaa</p>
+<p>1 &gt;&gt;&gt;&gt;&gt;&gt;hot_fix</p>
+<h6 id="合并冲突的解决"><a href="#合并冲突的解决" class="headerlink" title="合并冲突的解决"></a><em>合并冲突的解决</em></h6><p>1.编辑文件删除特殊符号<br>2.把文件修改到满意的程度<br>3.git add 文件名<br>4.git commit -m “日志信息”    此时不要带文件名</p>
+<h5 id="8）Git基本原理（无操作）"><a href="#8）Git基本原理（无操作）" class="headerlink" title="8）Git基本原理（无操作）"></a>8）Git基本原理（无操作）</h5><p>各个哈希算法的共同点、git底层采用的是sha1算法</p>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201009073951965.png" alt="image-20201009073951965"></p>
+<h4 id="2、远程库操作"><a href="#2、远程库操作" class="headerlink" title="2、远程库操作"></a>2、远程库操作</h4><hr>
+<h5 id="1）注册GitHub账号"><a href="#1）注册GitHub账号" class="headerlink" title="1）注册GitHub账号"></a>1）注册GitHub账号</h5><h5 id="2）在GitHub上创建一个仓库"><a href="#2）在GitHub上创建一个仓库" class="headerlink" title="2）在GitHub上创建一个仓库"></a>2）在GitHub上创建一个仓库</h5><h5 id="3）在本地保存远程库的地址，并给地址起别名"><a href="#3）在本地保存远程库的地址，并给地址起别名" class="headerlink" title="3）在本地保存远程库的地址，并给地址起别名"></a>3）在本地保存远程库的地址，并给地址起别名</h5><p>git remote -v                            查看别名地址</p>
+<p>git remote add 别名 地址        给该地址设置别名</p>
+<p>fetch：取回        push：推送</p>
+<h5 id="4）推送到远程库push"><a href="#4）推送到远程库push" class="headerlink" title="4）推送到远程库push"></a>4）推送到远程库push</h5><p>git push 别名 分支名</p>
+<h5 id="5）从远程库克隆"><a href="#5）从远程库克隆" class="headerlink" title="5）从远程库克隆"></a>5）从远程库克隆</h5><p>克隆的命令：git clone 地址名</p>
+<p>克隆的三个效果</p>
+<h6 id="1-完整的下载远程库"><a href="#1-完整的下载远程库" class="headerlink" title="1. 完整的下载远程库"></a>1. 完整的下载远程库</h6><h6 id="2-创建远程地址别名"><a href="#2-创建远程地址别名" class="headerlink" title="2. 创建远程地址别名"></a>2. 创建远程地址别名</h6><h6 id="3-初始化本地库"><a href="#3-初始化本地库" class="headerlink" title="3. 初始化本地库"></a>3. 初始化本地库</h6><h5 id="6）邀请其他成员进入团队"><a href="#6）邀请其他成员进入团队" class="headerlink" title="6）邀请其他成员进入团队"></a>6）邀请其他成员进入团队</h5><p>Collaborators里输入要邀请的人的账号，点击add collaborators，添加到合作人员，链接分享给该成员，该成员访问该地址，点击接受邀请</p>
+<h5 id="7）拉取其他成员做的修改（pull-fetch-merge）"><a href="#7）拉取其他成员做的修改（pull-fetch-merge）" class="headerlink" title="7）拉取其他成员做的修改（pull=fetch+merge）"></a>7）拉取其他成员做的修改（pull=fetch+merge）</h5><h6 id="1-从远程库抓取：git-fetch-远程地址别名-远程分支名"><a href="#1-从远程库抓取：git-fetch-远程地址别名-远程分支名" class="headerlink" title="1    从远程库抓取：git fetch [远程地址别名] [远程分支名]"></a>1    从远程库抓取：git fetch [远程地址别名] [远程分支名]</h6><h6 id="2-远程库分支合并到本地库分支：git-merge-远程地址别名-远程分支"><a href="#2-远程库分支合并到本地库分支：git-merge-远程地址别名-远程分支" class="headerlink" title="2    远程库分支合并到本地库分支：git merge [远程地址别名/远程分支]"></a>2    远程库分支合并到本地库分支：git merge [远程地址别名/远程分支]</h6><blockquote>
+<h6 id="上面的两个操作可以合并为：git-pull-远程地址别名-远程分支名"><a href="#上面的两个操作可以合并为：git-pull-远程地址别名-远程分支名" class="headerlink" title="上面的两个操作可以合并为：git pull [远程地址别名] [远程分支名]"></a>上面的两个操作可以合并为：git pull [远程地址别名] [远程分支名]</h6></blockquote>
+<p>分开的方式更加保险，pull可以用于较简单的修改上</p>
+<h5 id="8）协同开发时的冲突解决"><a href="#8）协同开发时的冲突解决" class="headerlink" title="8）协同开发时的冲突解决"></a>8）协同开发时的冲突解决</h5><h6 id="1如果不是基于GitHub远程库的最新版不能推送，必须先拉取"><a href="#1如果不是基于GitHub远程库的最新版不能推送，必须先拉取" class="headerlink" title="1如果不是基于GitHub远程库的最新版不能推送，必须先拉取"></a>1如果不是基于GitHub远程库的最新版不能推送，必须先拉取</h6><h6 id="2拉取后进入冲突状态，按照“分支冲突”的处理即可"><a href="#2拉取后进入冲突状态，按照“分支冲突”的处理即可" class="headerlink" title="2拉取后进入冲突状态，按照“分支冲突”的处理即可"></a>2拉取后进入冲突状态，按照“分支冲突”的处理即可</h6><h5 id="9）团队协作：fork、pull-request—-gt-审核—-gt-merge"><a href="#9）团队协作：fork、pull-request—-gt-审核—-gt-merge" class="headerlink" title="9）团队协作：fork、pull request—&gt;审核—&gt;merge"></a>9）团队协作：fork、pull request—&gt;审核—&gt;merge</h5><h6 id="1-登录账号，找到需要fork的项目，点击fork，作修改"><a href="#1-登录账号，找到需要fork的项目，点击fork，作修改" class="headerlink" title="1    登录账号，找到需要fork的项目，点击fork，作修改"></a>1    登录账号，找到需要fork的项目，点击fork，作修改</h6><h6 id="2-发起pull-request，给主开发人员审核后，它会进行合并"><a href="#2-发起pull-request，给主开发人员审核后，它会进行合并" class="headerlink" title="2    发起pull request，给主开发人员审核后，它会进行合并"></a>2    发起pull request，给主开发人员审核后，它会进行合并</h6><h5 id="10）SSH登录"><a href="#10）SSH登录" class="headerlink" title="10）SSH登录"></a>10）SSH登录</h5><h6 id="1-用户目录下：ssh-keygen-t-rsa-C-你的邮箱地址，之后会有一个id-rsa-pub的文件，复制里边的内容"><a href="#1-用户目录下：ssh-keygen-t-rsa-C-你的邮箱地址，之后会有一个id-rsa-pub的文件，复制里边的内容" class="headerlink" title="1    用户目录下：ssh-keygen -t rsa -C 你的邮箱地址，之后会有一个id_rsa.pub的文件，复制里边的内容"></a>1    用户目录下：ssh-keygen -t rsa -C 你的邮箱地址，之后会有一个id_rsa.pub的文件，复制里边的内容</h6><h6 id="2-在github账号里添加SSHKEY"><a href="#2-在github账号里添加SSHKEY" class="headerlink" title="2    在github账号里添加SSHKEY"></a>2    在github账号里添加SSHKEY</h6><h6 id="3-给SSH地址起一个别名"><a href="#3-给SSH地址起一个别名" class="headerlink" title="3    给SSH地址起一个别名"></a>3    给SSH地址起一个别名</h6><h6 id="4-在SSH地址下进行推送"><a href="#4-在SSH地址下进行推送" class="headerlink" title="4    在SSH地址下进行推送"></a>4    在SSH地址下进行推送</h6><h3 id="二、Git图形化界面操作"><a href="#二、Git图形化界面操作" class="headerlink" title="二、Git图形化界面操作"></a>二、Git图形化界面操作</h3><h4 id="1、-Eclipse上的git操作"><a href="#1、-Eclipse上的git操作" class="headerlink" title="1、 Eclipse上的git操作"></a>1、 Eclipse上的git操作</h4><hr>
+<h5 id="1）Eclipse内置了git插件"><a href="#1）Eclipse内置了git插件" class="headerlink" title="1）Eclipse内置了git插件"></a>1）Eclipse内置了git插件</h5><h5 id="2）将该工程进行本地化初始化"><a href="#2）将该工程进行本地化初始化" class="headerlink" title="2）将该工程进行本地化初始化"></a>2）将该工程进行本地化初始化</h5><p>工程——右键——Team——Share Project——Git、next——&gt;<img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201009111700836.png" alt="image-20201009111700836">勾选——&gt;</p>
+<p>选中工程——Create Repository——Finish</p>
+<h5 id="3）设置工程级别的签名"><a href="#3）设置工程级别的签名" class="headerlink" title="3）设置工程级别的签名"></a>3）设置工程级别的签名</h5><p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201009112116976.png" alt="image-20201009112116976"></p>
+<h5 id="4）Eclipse中忽略文件-https-github-com-github-gitignore"><a href="#4）Eclipse中忽略文件-https-github-com-github-gitignore" class="headerlink" title="4）Eclipse中忽略文件(https://github.com/github/gitignore)"></a>4）Eclipse中忽略文件(<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">https://github.com/github/gitignore</a>)</h5><h6 id="1-概念：Eclipse特定文件"><a href="#1-概念：Eclipse特定文件" class="headerlink" title="1    概念：Eclipse特定文件"></a>1    概念：Eclipse特定文件</h6><p>.classpath文件    .project文件    .settings文件</p>
+<p>这些文件不要添加到本地库中，忽略即可</p>
+<h6 id="2-忽略：在-gitconfig同级目录下创建一个配置文件，放入忽略内容，然后再-gitconfig加入如下配置"><a href="#2-忽略：在-gitconfig同级目录下创建一个配置文件，放入忽略内容，然后再-gitconfig加入如下配置" class="headerlink" title="2    忽略：在.gitconfig同级目录下创建一个配置文件，放入忽略内容，然后再.gitconfig加入如下配置"></a>2    忽略：在.gitconfig同级目录下创建一个配置文件，放入忽略内容，然后再.gitconfig加入如下配置</h6><p>[core]</p>
+<p>​        excludesfile = C:\Users\ASUS\Java.gitignore</p>
+<h6 id="3-提交到本地库"><a href="#3-提交到本地库" class="headerlink" title="3    提交到本地库"></a>3    提交到本地库</h6><h6 id="4-推送到远程库"><a href="#4-推送到远程库" class="headerlink" title="4    推送到远程库"></a>4    推送到远程库</h6><h6 id="5-克隆到本地"><a href="#5-克隆到本地" class="headerlink" title="5    克隆到本地"></a>5    克隆到本地</h6><h6 id="6-Eclipse中导入工程"><a href="#6-Eclipse中导入工程" class="headerlink" title="6    Eclipse中导入工程"></a>6    Eclipse中导入工程</h6><h6 id="7-Eclipse中解决冲突问题"><a href="#7-Eclipse中解决冲突问题" class="headerlink" title="7    Eclipse中解决冲突问题"></a>7    Eclipse中解决冲突问题</h6><h4 id="2-、IDEA上的git操作"><a href="#2-、IDEA上的git操作" class="headerlink" title="2 、IDEA上的git操作"></a>2 、IDEA上的git操作</h4><hr>
+<h3 id="三、Git工作流"><a href="#三、Git工作流" class="headerlink" title="三、Git工作流"></a>三、Git工作流</h3><hr>
+<h5 id="1）git工作流"><a href="#1）git工作流" class="headerlink" title="1）git工作流"></a>1）git工作流</h5><h6 id="1-三种工作流：GitFlow、Forking、集中式工作流"><a href="#1-三种工作流：GitFlow、Forking、集中式工作流" class="headerlink" title="1    三种工作流：GitFlow、Forking、集中式工作流"></a>1    三种工作流：GitFlow、Forking、集中式工作流</h6><h4 id=""><a href="#" class="headerlink" title=""></a></h4>
       
 
       
@@ -203,6 +247,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -253,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/newPage/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/2020/10/25/git-%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,6 +320,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2020/10/25/mysql-1-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%99%BB%E5%BD%95%E7%99%BB%E5%87%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          mysql-1-安装以及登录登出
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/25/linux-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">linux-基本命令</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -286,7 +360,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#git版本控制基础内容"><span class="toc-number">1.</span> <span class="toc-text">git版本控制基础内容</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#版本控制应具备的功能"><span class="toc-number">1.1.</span> <span class="toc-text">版本控制应具备的功能</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#git结构"><span class="toc-number">1.2.</span> <span class="toc-text">git结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#本地库和远程库的交互方式push-pull-fork-merge-clone"><span class="toc-number">1.3.</span> <span class="toc-text">本地库和远程库的交互方式push pull fork merge clone</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一、Git命令行操作"><span class="toc-number"></span> <span class="toc-text">一、Git命令行操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、本地库操作"><span class="toc-number">1.</span> <span class="toc-text">1、本地库操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1）本地库初始化"><span class="toc-number">1.1.</span> <span class="toc-text">1）本地库初始化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2）设置签名：用户名和Email地址（eamil没有什么用）"><span class="toc-number">1.2.</span> <span class="toc-text">2）设置签名：用户名和Email地址（eamil没有什么用）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3）添加提交以及查看操作状态"><span class="toc-number">1.3.</span> <span class="toc-text">3）添加提交以及查看操作状态</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4）前进后退版本（基于索引、-、-）推荐使用索引"><span class="toc-number">1.4.</span> <span class="toc-text">4）前进后退版本（基于索引、^、~）推荐使用索引</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5）永久删除文件后的找回"><span class="toc-number">1.5.</span> <span class="toc-text">5）永久删除文件后的找回</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6）比较文件差异"><span class="toc-number">1.6.</span> <span class="toc-text">6）比较文件差异</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7）分支管理"><span class="toc-number">1.7.</span> <span class="toc-text">7）分支管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#——合并分支"><span class="toc-number">1.8.</span> <span class="toc-text">——合并分支</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#合并冲突的解决"><span class="toc-number">1.8.1.</span> <span class="toc-text">合并冲突的解决</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8）Git基本原理（无操作）"><span class="toc-number">1.9.</span> <span class="toc-text">8）Git基本原理（无操作）</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、远程库操作"><span class="toc-number">2.</span> <span class="toc-text">2、远程库操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1）注册GitHub账号"><span class="toc-number">2.1.</span> <span class="toc-text">1）注册GitHub账号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2）在GitHub上创建一个仓库"><span class="toc-number">2.2.</span> <span class="toc-text">2）在GitHub上创建一个仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3）在本地保存远程库的地址，并给地址起别名"><span class="toc-number">2.3.</span> <span class="toc-text">3）在本地保存远程库的地址，并给地址起别名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4）推送到远程库push"><span class="toc-number">2.4.</span> <span class="toc-text">4）推送到远程库push</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5）从远程库克隆"><span class="toc-number">2.5.</span> <span class="toc-text">5）从远程库克隆</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-完整的下载远程库"><span class="toc-number">2.5.1.</span> <span class="toc-text">1. 完整的下载远程库</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-创建远程地址别名"><span class="toc-number">2.5.2.</span> <span class="toc-text">2. 创建远程地址别名</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-初始化本地库"><span class="toc-number">2.5.3.</span> <span class="toc-text">3. 初始化本地库</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6）邀请其他成员进入团队"><span class="toc-number">2.6.</span> <span class="toc-text">6）邀请其他成员进入团队</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7）拉取其他成员做的修改（pull-fetch-merge）"><span class="toc-number">2.7.</span> <span class="toc-text">7）拉取其他成员做的修改（pull=fetch+merge）</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-从远程库抓取：git-fetch-远程地址别名-远程分支名"><span class="toc-number">2.7.1.</span> <span class="toc-text">1    从远程库抓取：git fetch [远程地址别名] [远程分支名]</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-远程库分支合并到本地库分支：git-merge-远程地址别名-远程分支"><span class="toc-number">2.7.2.</span> <span class="toc-text">2    远程库分支合并到本地库分支：git merge [远程地址别名/远程分支]</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#上面的两个操作可以合并为：git-pull-远程地址别名-远程分支名"><span class="toc-number">2.7.3.</span> <span class="toc-text">上面的两个操作可以合并为：git pull [远程地址别名] [远程分支名]</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8）协同开发时的冲突解决"><span class="toc-number">2.8.</span> <span class="toc-text">8）协同开发时的冲突解决</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1如果不是基于GitHub远程库的最新版不能推送，必须先拉取"><span class="toc-number">2.8.1.</span> <span class="toc-text">1如果不是基于GitHub远程库的最新版不能推送，必须先拉取</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2拉取后进入冲突状态，按照“分支冲突”的处理即可"><span class="toc-number">2.8.2.</span> <span class="toc-text">2拉取后进入冲突状态，按照“分支冲突”的处理即可</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#9）团队协作：fork、pull-request—-gt-审核—-gt-merge"><span class="toc-number">2.9.</span> <span class="toc-text">9）团队协作：fork、pull request—&gt;审核—&gt;merge</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-登录账号，找到需要fork的项目，点击fork，作修改"><span class="toc-number">2.9.1.</span> <span class="toc-text">1    登录账号，找到需要fork的项目，点击fork，作修改</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-发起pull-request，给主开发人员审核后，它会进行合并"><span class="toc-number">2.9.2.</span> <span class="toc-text">2    发起pull request，给主开发人员审核后，它会进行合并</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#10）SSH登录"><span class="toc-number">2.10.</span> <span class="toc-text">10）SSH登录</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-用户目录下：ssh-keygen-t-rsa-C-你的邮箱地址，之后会有一个id-rsa-pub的文件，复制里边的内容"><span class="toc-number">2.10.1.</span> <span class="toc-text">1    用户目录下：ssh-keygen -t rsa -C 你的邮箱地址，之后会有一个id_rsa.pub的文件，复制里边的内容</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-在github账号里添加SSHKEY"><span class="toc-number">2.10.2.</span> <span class="toc-text">2    在github账号里添加SSHKEY</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-给SSH地址起一个别名"><span class="toc-number">2.10.3.</span> <span class="toc-text">3    给SSH地址起一个别名</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-在SSH地址下进行推送"><span class="toc-number">2.10.4.</span> <span class="toc-text">4    在SSH地址下进行推送</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、Git图形化界面操作"><span class="toc-number"></span> <span class="toc-text">二、Git图形化界面操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、-Eclipse上的git操作"><span class="toc-number">1.</span> <span class="toc-text">1、 Eclipse上的git操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1）Eclipse内置了git插件"><span class="toc-number">1.1.</span> <span class="toc-text">1）Eclipse内置了git插件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2）将该工程进行本地化初始化"><span class="toc-number">1.2.</span> <span class="toc-text">2）将该工程进行本地化初始化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3）设置工程级别的签名"><span class="toc-number">1.3.</span> <span class="toc-text">3）设置工程级别的签名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4）Eclipse中忽略文件-https-github-com-github-gitignore"><span class="toc-number">1.4.</span> <span class="toc-text">4）Eclipse中忽略文件(https://github.com/github/gitignore)</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-概念：Eclipse特定文件"><span class="toc-number">1.4.1.</span> <span class="toc-text">1    概念：Eclipse特定文件</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-忽略：在-gitconfig同级目录下创建一个配置文件，放入忽略内容，然后再-gitconfig加入如下配置"><span class="toc-number">1.4.2.</span> <span class="toc-text">2    忽略：在.gitconfig同级目录下创建一个配置文件，放入忽略内容，然后再.gitconfig加入如下配置</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-提交到本地库"><span class="toc-number">1.4.3.</span> <span class="toc-text">3    提交到本地库</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-推送到远程库"><span class="toc-number">1.4.4.</span> <span class="toc-text">4    推送到远程库</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-克隆到本地"><span class="toc-number">1.4.5.</span> <span class="toc-text">5    克隆到本地</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-Eclipse中导入工程"><span class="toc-number">1.4.6.</span> <span class="toc-text">6    Eclipse中导入工程</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-Eclipse中解决冲突问题"><span class="toc-number">1.4.7.</span> <span class="toc-text">7    Eclipse中解决冲突问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-、IDEA上的git操作"><span class="toc-number">2.</span> <span class="toc-text">2 、IDEA上的git操作</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、Git工作流"><span class="toc-number"></span> <span class="toc-text">三、Git工作流</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1）git工作流"><span class="toc-number">0.1.</span> <span class="toc-text">1）git工作流</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-三种工作流：GitFlow、Forking、集中式工作流"><span class="toc-number">0.1.1.</span> <span class="toc-text">1    三种工作流：GitFlow、Forking、集中式工作流</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -306,6 +380,8 @@
   
 
   
+
+
 
 
           </div>
@@ -332,7 +408,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

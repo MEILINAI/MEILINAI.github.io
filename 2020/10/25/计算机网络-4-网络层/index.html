@@ -6,18 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>newPage | MeiLinai</title>
+  <title>计算机网络-4-网络层 | MeiLinai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客">
-<meta name="keywords" content="小白博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="newPage">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;newPage&#x2F;index.html">
+  <meta name="description" content="网络层">
+<meta name="keywords" content="计算机网络">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络-4-网络层">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;10&#x2F;25&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-4-%E7%BD%91%E7%BB%9C%E5%B1%82&#x2F;index.html">
 <meta property="og:site_name" content="MeiLinai">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="网络层">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-02T13:29:29.445Z">
+<meta property="og:image" content="e:%5Cblog%5Cpublic%5Cimg%5Cnetworkofcomputer%5Cimage-20201022191132452.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201023195255096.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201023214603885.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201023215119640.png">
+<meta property="og:updated_time" content="2020-10-25T13:10:43.890Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="e:%5Cblog%5Cpublic%5Cimg%5Cnetworkofcomputer%5Cimage-20201022191132452.png">
   
     <link rel="alternative" href="/atom.xml" title="MeiLinai" type="application/atom+xml">
   
@@ -149,27 +154,301 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-计算机网络-4-网络层" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      newPage
+      计算机网络-4-网络层
     </h1>
   
 
         
-        <a href="/newPage/index.html" class="archive-article-date">
-  	<time datetime="2019-12-02T13:29:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+        <a href="/2020/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-4-%E7%BD%91%E7%BB%9C%E5%B1%82/" class="archive-article-date">
+  	<time datetime="2020-10-25T12:34:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层<a id="more"></a></h2><h4 id="一、网络层提供的两种服务"><a href="#一、网络层提供的两种服务" class="headerlink" title="一、网络层提供的两种服务"></a>一、网络层提供的两种服务</h4><h5 id="1-面向连接or无连接"><a href="#1-面向连接or无连接" class="headerlink" title="1.    面向连接or无连接"></a>1.    面向连接or无连接</h5><h5 id="2-可靠交付由谁来负责？网络or端系统"><a href="#2-可靠交付由谁来负责？网络or端系统" class="headerlink" title="2.    可靠交付由谁来负责？网络or端系统"></a>2.    可靠交付由谁来负责？网络or端系统</h5><p>由网络负责：虚电路服务</p>
+<p>端系统负责：数据报服务</p>
+<h4 id="二、网际层协议IP-配套使用的协议ICMP、IGMP、ARP"><a href="#二、网际层协议IP-配套使用的协议ICMP、IGMP、ARP" class="headerlink" title="二、网际层协议IP(配套使用的协议ICMP、IGMP、ARP)"></a>二、网际层协议IP(配套使用的协议ICMP、IGMP、ARP)</h4><h5 id="1-虚拟互联网络（IP网）"><a href="#1-虚拟互联网络（IP网）" class="headerlink" title="1.    虚拟互联网络（IP网）"></a>1.    虚拟互联网络（IP网）</h5><p>由路由器互相连接各个网络组成的整体网络</p>
+<h5 id="2-分类的IP地址"><a href="#2-分类的IP地址" class="headerlink" title="2.    分类的IP地址"></a>2.    分类的IP地址</h5><ul>
+<li><h6 id="IP地址的编址方法"><a href="#IP地址的编址方法" class="headerlink" title="IP地址的编址方法"></a>IP地址的编址方法</h6></li>
+</ul>
+<p>1）分类的IP地址：A、B、C单播类，D多播类，E</p>
+<p>2）子网的划分。改进的分类编址方法</p>
+<p>3）构成超网。无分类编制方法</p>
+<ul>
+<li><h6 id="分类的IP地址"><a href="#分类的IP地址" class="headerlink" title="分类的IP地址"></a>分类的IP地址</h6></li>
+</ul>
+<p>net-id + host-id</p>
+<p>A：0    8+24</p>
+<p>B：10    16+16<br>C：110    24+8</p>
+<p>D：1110    多播地址<br>E：1111    保留为今后使用</p>
+<ul>
+<li>点分十进制法</li>
+</ul>
+<p>例：192.168.23.34</p>
+<ul>
+<li><p>IP地址的指派范围</p>
+<table>
+<thead>
+<tr>
+<th>网络类别</th>
+<th>最大可指派的网络数</th>
+<th>第一个可指派的网络数</th>
+<th>最后一个可指派的网络数</th>
+<th>每个网络中最大的主机数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>2^7 - 2</td>
+<td>1</td>
+<td>126</td>
+<td>2^24 - 2</td>
+</tr>
+<tr>
+<td>B</td>
+<td>2^14 - 1</td>
+<td>128.1</td>
+<td>191.255</td>
+<td>2^16 - 2</td>
+</tr>
+<tr>
+<td>C</td>
+<td>2^21 - 1</td>
+<td>192.0.1</td>
+<td>223.255.255</td>
+<td>2^8 - 2</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>IP地址的一些重要特点</p>
+</li>
+</ul>
+<ol>
+<li>ip地址是分等级的地址结构</li>
+<li>实际上IP地址是标志一个主机(或路由器)和一条链路的接口</li>
+<li>用转发器或网桥连接起来的若干局域网仍为一个网络</li>
+<li>所有分配到网络号的网络都是平等的</li>
+</ol>
+<h5 id="3-IP地址与硬件地址"><a href="#3-IP地址与硬件地址" class="headerlink" title="3.    IP地址与硬件地址"></a>3.    IP地址与硬件地址</h5><ul>
+<li><h6 id="IP地址是一个逻辑地址，可以改变的。硬件地址是不可改变的"><a href="#IP地址是一个逻辑地址，可以改变的。硬件地址是不可改变的" class="headerlink" title="IP地址是一个逻辑地址，可以改变的。硬件地址是不可改变的"></a>IP地址是一个逻辑地址，可以改变的。硬件地址是不可改变的</h6></li>
+<li><h6 id="IP地址是总的起点和重点，而途中经过不同的许多地方为硬件地址"><a href="#IP地址是总的起点和重点，而途中经过不同的许多地方为硬件地址" class="headerlink" title="IP地址是总的起点和重点，而途中经过不同的许多地方为硬件地址"></a>IP地址是总的起点和重点，而途中经过不同的许多地方为硬件地址</h6></li>
+</ul>
+<h5 id="4-地址解析协议ARP-通过给定的IP地址，解析出其对应的硬件地址"><a href="#4-地址解析协议ARP-通过给定的IP地址，解析出其对应的硬件地址" class="headerlink" title="4.    地址解析协议ARP(通过给定的IP地址，解析出其对应的硬件地址)"></a>4.    地址解析协议ARP(通过给定的IP地址，解析出其对应的硬件地址)</h5><ul>
+<li><h5 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h5></li>
+</ul>
+<ol>
+<li><p>不管网络层使用什么协议，在实际网络传送数据时最终还是需要硬件地址</p>
+</li>
+<li><p>每个主机都有一个ARP高速缓存(ARP cache)，里面有所在局域网上各主机和路由器IP地址到硬件地址的映射表</p>
+<p>&lt;IP address;    MAC address;    TTL&gt;    TTL：Time To Live 地址映射有效时间</p>
+</li>
+<li><p>A主机发信息给B主机，A先在ARP高速缓存中查看是否有B的IP地址</p>
+<p>1）有：根据IP地址在映射表中得到硬件地址，写入MAC帧，通过局域网将信息发到此地址</p>
+<p>2）没有：ARP进程在本局域网广播发送一个ARP请求分组。收到ARP响应分组后，将得到的IP地址到硬件地址的映射写入ARP告诉缓存</p>
+</li>
+<li><p>在局域网上发送ARP请求分组</p>
+<p>1）能找到，改主机回应硬件地址</p>
+<p>2）没有找到，其他主机不能响应</p>
+</li>
+<li><p>若源主机和目的主机不在同一个同一个局域网</p>
+<p>ARP会找到一个位于本局域网的某个路由器的硬件地址，把分组发给这个路由器，这个路由器将分组转发到下一个网络。剩下的工作就交给下一个网络处理</p>
+</li>
+</ol>
+<ul>
+<li><h5 id="使用ARP发送请求分组的四种典型问题（ARP代理）"><a href="#使用ARP发送请求分组的四种典型问题（ARP代理）" class="headerlink" title="使用ARP发送请求分组的四种典型问题（ARP代理）"></a>使用ARP发送请求分组的四种典型问题（ARP代理）</h5></li>
+</ul>
+<ol>
+<li>目的主机IP刚好在同一个网络（主机询问，主机回答）</li>
+<li>目的主机IP刚好在隔壁网络，由路由器转发一次（主机询问，路由器回答）</li>
+<li>路由器有一个数据包，则路由器发起请求分组，而这个主机IP刚好就在该路由器连着的网络（路由器询问，主机回答）</li>
+<li>目的主机和自己隔着好几个网络（路由器发询问，路由器回答）</li>
+</ol>
+<h5 id="5-IP数据包的格式"><a href="#5-IP数据包的格式" class="headerlink" title="5.    IP数据包的格式"></a>5.    IP数据包的格式</h5><ul>
+<li><h5 id="由首部和数据两部分组成"><a href="#由首部和数据两部分组成" class="headerlink" title="由首部和数据两部分组成"></a>由首部和数据两部分组成</h5></li>
+</ul>
+<ol>
+<li>首部固定，共20个字节，所有IP必须有</li>
+<li>首部后是可选字段，长度可变（20&lt;=首部长度&lt;=60，0&lt;=可变部分&lt;=40）</li>
+</ol>
+<p><img src="E:%5Cblog%5Cpublic%5Cimg%5Cnetworkofcomputer%5Cimage-20201022191132452.png" alt="image-20201022191132452"></p>
+<ol start="3">
+<li><p>总长度：最大为65535字节</p>
+</li>
+<li><p>标识：一个计数器，用产生IP数据包的标识</p>
+</li>
+<li><p>标志：3位，第一位MF，中间位DF，最后一位暂时没啥用。</p>
+<p>MF：More Fragment    1表示还有分片</p>
+<p>DF：Don’t Fragment    0表示允许分片</p>
+</li>
+<li><p>片偏移：单位是8字节/位，含义，分片时该分片的数据头到原数据数据头的长度除以8.</p>
+<p>分完后每个分片的首部是改动过标志和片偏移的原首部</p>
+</li>
+<li><p>TTL(Time To Live)：生存时间</p>
+</li>
+<li><p>协议：指出此数据包携带的数据使用的何种协议</p>
+</li>
+<li><p>首部校验和：使用二进制反码求和算法，只校验首部</p>
+</li>
+<li><p>源地址和目的地址</p>
+</li>
+<li><p>可变长度：可用来支持排错、测量以及安全等措施</p>
+</li>
+</ol>
+<h5 id="6-IP层转发分组的流程"><a href="#6-IP层转发分组的流程" class="headerlink" title="6.    IP层转发分组的流程"></a>6.    IP层转发分组的流程</h5><ul>
+<li><h6 id="路由表中最重要的两个信息是（目的网络地址，下一跳地址）"><a href="#路由表中最重要的两个信息是（目的网络地址，下一跳地址）" class="headerlink" title="路由表中最重要的两个信息是（目的网络地址，下一跳地址）"></a>路由表中最重要的两个信息是（目的网络地址，下一跳地址）</h6></li>
+<li><h6 id="默认路由：当目的网络在路由表中找不到时，下一跳地址会走到默认路由"><a href="#默认路由：当目的网络在路由表中找不到时，下一跳地址会走到默认路由" class="headerlink" title="默认路由：当目的网络在路由表中找不到时，下一跳地址会走到默认路由"></a>默认路由：当目的网络在路由表中找不到时，下一跳地址会走到默认路由</h6></li>
+<li><h6 id="路由转发算法：直连路由—-gt-特定路由—-gt-动态路由—-gt-默认路由"><a href="#路由转发算法：直连路由—-gt-特定路由—-gt-动态路由—-gt-默认路由" class="headerlink" title="路由转发算法：直连路由—&gt;特定路由—&gt;动态路由—&gt;默认路由"></a>路由转发算法：直连路由—&gt;特定路由—&gt;动态路由—&gt;默认路由</h6></li>
+</ul>
+<h4 id="三、划分子网和构造超网"><a href="#三、划分子网和构造超网" class="headerlink" title="三、划分子网和构造超网"></a>三、划分子网和构造超网</h4><ul>
+<li><h5 id="从主机号借用若干位作为子网号subnet-id"><a href="#从主机号借用若干位作为子网号subnet-id" class="headerlink" title="从主机号借用若干位作为子网号subnet-id"></a>从主机号借用若干位作为子网号subnet-id</h5><p>IP地址 ::= { &lt;网络号&gt;, &lt;子网号&gt;, &lt;主机号&gt; }</p>
+<p>划分了子网的网络对外仍然表现位同一个网络</p>
+</li>
+<li><h5 id="子网掩码（用于判断划分的子网的位数）"><a href="#子网掩码（用于判断划分的子网的位数）" class="headerlink" title="子网掩码（用于判断划分的子网的位数）"></a>子网掩码（用于判断划分的子网的位数）</h5><p>左1位数：IP中网络号和子网号的位数和</p>
+<p>右0位数：主机号的位数</p>
+<p>（IP地址 ）与 （子网掩码） = 网络地址</p>
+</li>
+<li><h5 id="子网划分方法（全0和全1不使用）"><a href="#子网划分方法（全0和全1不使用）" class="headerlink" title="子网划分方法（全0和全1不使用）"></a>子网划分方法（全0和全1不使用）</h5></li>
+</ul>
+<ol>
+<li>固定长度子网</li>
+<li>变长子网</li>
+</ol>
+<ul>
+<li><h5 id="使用子网时分组的转发"><a href="#使用子网时分组的转发" class="headerlink" title="使用子网时分组的转发"></a>使用子网时分组的转发</h5><ul>
+<li><h6 id="判断连个IP是否属于同一个网络"><a href="#判断连个IP是否属于同一个网络" class="headerlink" title="判断连个IP是否属于同一个网络"></a>判断连个IP是否属于同一个网络</h6></li>
+</ul>
+<p>子网掩码与上IP的结果网络号是否相同，相同就是同一个网络，否则不在同一个网络</p>
+<ol>
+<li>首先检查目的IP是否在本网络，在就直接交付</li>
+<li>不在的话则交给路由器，路由器查表（将目的IP与上表中的子网掩码再和表中的目的网络地址匹配，从而确定下一跳的地址）</li>
+</ol>
+</li>
+<li><h5 id="无分类的两级编址"><a href="#无分类的两级编址" class="headerlink" title="无分类的两级编址"></a>无分类的两级编址</h5><p>IP地址 ::= {&lt;网络前缀&gt;, &lt;主机号&gt;}，使用斜线记法</p>
+</li>
+<li><h5 id="路由聚合（构成超网）"><a href="#路由聚合（构成超网）" class="headerlink" title="路由聚合（构成超网）"></a>路由聚合（构成超网）</h5><p>CIDR地址块表示的很多地址的聚合</p>
+</li>
+<li><h5 id="最长前缀匹配（匹配越长越具体）"><a href="#最长前缀匹配（匹配越长越具体）" class="headerlink" title="最长前缀匹配（匹配越长越具体）"></a>最长前缀匹配（匹配越长越具体）</h5><p>再查找路由表可能会有多个结果，使用网络前缀最长的那个</p>
+</li>
+<li><h5 id="二叉树查找"><a href="#二叉树查找" class="headerlink" title="二叉树查找"></a>二叉树查找</h5></li>
+</ul>
+<h4 id="四、网际控制报文协议ICMP"><a href="#四、网际控制报文协议ICMP" class="headerlink" title="四、网际控制报文协议ICMP"></a>四、网际控制报文协议ICMP</h4><ul>
+<li><h5 id="使用目的：为了更有地转发IP数据包和提高交付成功的机会"><a href="#使用目的：为了更有地转发IP数据包和提高交付成功的机会" class="headerlink" title="使用目的：为了更有地转发IP数据包和提高交付成功的机会"></a>使用目的：为了更有地转发IP数据包和提高交付成功的机会</h5></li>
+<li><h5 id="ICMP报文的格式"><a href="#ICMP报文的格式" class="headerlink" title="ICMP报文的格式"></a>ICMP报文的格式</h5></li>
+</ul>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201023195255096.png" alt="image-20201023195255096"></p>
+<ul>
+<li><h5 id="ICMP报文的种类"><a href="#ICMP报文的种类" class="headerlink" title="ICMP报文的种类"></a>ICMP报文的种类</h5><ul>
+<li><h6 id="差错检测报文（4种）"><a href="#差错检测报文（4种）" class="headerlink" title="差错检测报文（4种）"></a>差错检测报文（4种）</h6></li>
+</ul>
+<p>终点不可达、时间超过、参数问题、改变路由(重定向)（Redirect），</p>
+<p>不发送ICMP差错报文的几种情况</p>
+<ol>
+<li>ICMP差错报告自己错了</li>
+<li>对第一个分片的后续数据报片不发送ICMP差错报告</li>
+<li>具有多播地址的数据报不发送ICMP差错检测报告</li>
+<li>具有特殊的地址不发送ICMP差错报告报文</li>
+</ol>
+<ul>
+<li><h6 id="询问报文（2种）"><a href="#询问报文（2种）" class="headerlink" title="询问报文（2种）"></a>询问报文（2种）</h6><ul>
+<li>回送请求和回答报文</li>
+<li>时间戳请求和回答报文</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="ICMP的应用举例"><a href="#ICMP的应用举例" class="headerlink" title="ICMP的应用举例"></a>ICMP的应用举例</h5><ul>
+<li><p>ping（packet internet groper)</p>
+<p>测试连通性</p>
+</li>
+<li><p>tarcet（linux：traceroute）</p>
+<p>跟踪一个分组从源点到终点的路径</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="五、互联网的路由选择协议"><a href="#五、互联网的路由选择协议" class="headerlink" title="五、互联网的路由选择协议"></a>五、互联网的路由选择协议</h4><ul>
+<li><h5 id="有关路由选择协议的几个概念"><a href="#有关路由选择协议的几个概念" class="headerlink" title="有关路由选择协议的几个概念"></a>有关路由选择协议的几个概念</h5></li>
+</ul>
+<ol>
+<li>理想的路由算法</li>
+<li>分层次的路由选择协议（主要是自适应、分布式路由选择协议）</li>
+</ol>
+<p>自治系统AS（自治系统内部的选择：域内路由选择、自治系统间的选择：域间路由选择）</p>
+<p>分类：内部网关协议IGP、外部网关协议EGP</p>
+<ul>
+<li><h5 id="内部网关协议RIP"><a href="#内部网关协议RIP" class="headerlink" title="内部网关协议RIP"></a>内部网关协议RIP</h5></li>
+</ul>
+<ol>
+<li>工作原理</li>
+</ol>
+<p>距离短优先（距离：通过的路由器数，最多15个，16表示不可到达）</p>
+<ol start="2">
+<li>三个特点</li>
+</ol>
+<p>1）仅和相邻路由交换信息 2）交换的信息是自己的全部信息 3）按固定时间间隔交换路由信息</p>
+<ol start="3">
+<li>路由表的建立</li>
+<li>路由表跟新使用到距离向量算法</li>
+</ol>
+<ul>
+<li><h5 id="内部网关协议OSPF"><a href="#内部网关协议OSPF" class="headerlink" title="内部网关协议OSPF"></a>内部网关协议OSPF</h5></li>
+</ul>
+<ol>
+<li><p>开放最短路径优先OSPF</p>
+</li>
+<li><p>实现原理</p>
+<p>OSPF把一个自治系统AS再划分位若干范围，称为区域</p>
+</li>
+</ol>
+<ul>
+<li><h5 id="外部网关协议BGP（略）"><a href="#外部网关协议BGP（略）" class="headerlink" title="外部网关协议BGP（略）"></a>外部网关协议BGP（略）</h5></li>
+<li><h5 id="路由器的构成（略）"><a href="#路由器的构成（略）" class="headerlink" title="路由器的构成（略）"></a>路由器的构成（略）</h5></li>
+</ul>
+<h4 id="六、IPv6"><a href="#六、IPv6" class="headerlink" title="六、IPv6"></a>六、IPv6</h4><ul>
+<li><h5 id="IPv6的基本首部（40字节，字段8个）"><a href="#IPv6的基本首部（40字节，字段8个）" class="headerlink" title="IPv6的基本首部（40字节，字段8个）"></a>IPv6的基本首部（40字节，字段8个）</h5></li>
+</ul>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201023214603885.png" alt="image-20201023214603885"></p>
+<p>​        <img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201023215119640.png" alt="image-20201023215119640"></p>
+<ul>
+<li><h5 id="IPv6的地址"><a href="#IPv6的地址" class="headerlink" title="IPv6的地址"></a>IPv6的地址</h5><ul>
+<li>目的地址可以是以下三种：单播、多播、任播</li>
+<li>冒号十六进制记法（允许零压缩）</li>
+</ul>
+</li>
+<li><h5 id="从IPv4向IPv6过度"><a href="#从IPv4向IPv6过度" class="headerlink" title="从IPv4向IPv6过度"></a>从IPv4向IPv6过度</h5><ul>
+<li>双协议栈</li>
+<li>隧道技术</li>
+</ul>
+</li>
+<li><h5 id="ICMPv6"><a href="#ICMPv6" class="headerlink" title="ICMPv6"></a>ICMPv6</h5><ul>
+<li>差错报文、信息报文、邻站发现报文、组成员关系报文</li>
+</ul>
+</li>
+</ul>
+<h4 id="七、IP多播"><a href="#七、IP多播" class="headerlink" title="七、IP多播"></a>七、IP多播</h4><ul>
+<li><h5 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h5><ul>
+<li>目的：更好的支持一对多通信</li>
+</ul>
+</li>
+<li><h5 id="网际组管理协议IGMP和多播路由选择协议"><a href="#网际组管理协议IGMP和多播路由选择协议" class="headerlink" title="网际组管理协议IGMP和多播路由选择协议"></a>网际组管理协议IGMP和多播路由选择协议</h5></li>
+</ul>
+<h4 id="八、虚拟专用网VPN和网络地址转换NAT"><a href="#八、虚拟专用网VPN和网络地址转换NAT" class="headerlink" title="八、虚拟专用网VPN和网络地址转换NAT"></a>八、虚拟专用网VPN和网络地址转换NAT</h4><ul>
+<li><h5 id="虚拟专用网VPN"><a href="#虚拟专用网VPN" class="headerlink" title="虚拟专用网VPN"></a>虚拟专用网VPN</h5></li>
+</ul>
+<p>用隧道技术实现虚拟专用网</p>
+<ul>
+<li><h5 id="网络地址转换NAT（全球IP地址172-38-1-5）"><a href="#网络地址转换NAT（全球IP地址172-38-1-5）" class="headerlink" title="网络地址转换NAT（全球IP地址172.38.1.5）"></a>网络地址转换NAT（全球IP地址172.38.1.5）</h5></li>
+</ul>
+<h4 id="九、对协议标记交换MPLS（提高网络层转发效率）"><a href="#九、对协议标记交换MPLS（提高网络层转发效率）" class="headerlink" title="九、对协议标记交换MPLS（提高网络层转发效率）"></a>九、对协议标记交换MPLS（提高网络层转发效率）</h4>
       
 
       
@@ -203,6 +482,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">计算机网络</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -253,7 +543,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/newPage/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/2020/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-4-%E7%BD%91%E7%BB%9C%E5%B1%82/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,6 +555,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2020/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-5-%E8%BF%90%E8%BE%93%E5%B1%82/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          计算机网络-5-运输层
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/10/yilia%E4%BD%BF%E7%94%A8%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">yilia使用标签管理文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -286,7 +595,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#网络层"><span class="toc-number">1.</span> <span class="toc-text">网络层</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、网络层提供的两种服务"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、网络层提供的两种服务</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-面向连接or无连接"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">1.    面向连接or无连接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-可靠交付由谁来负责？网络or端系统"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">2.    可靠交付由谁来负责？网络or端系统</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、网际层协议IP-配套使用的协议ICMP、IGMP、ARP"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、网际层协议IP(配套使用的协议ICMP、IGMP、ARP)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-虚拟互联网络（IP网）"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">1.    虚拟互联网络（IP网）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-分类的IP地址"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">2.    分类的IP地址</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#IP地址的编址方法"><span class="toc-number">1.0.2.2.1.</span> <span class="toc-text">IP地址的编址方法</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#分类的IP地址"><span class="toc-number">1.0.2.2.2.</span> <span class="toc-text">分类的IP地址</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-IP地址与硬件地址"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">3.    IP地址与硬件地址</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#IP地址是一个逻辑地址，可以改变的。硬件地址是不可改变的"><span class="toc-number">1.0.2.3.1.</span> <span class="toc-text">IP地址是一个逻辑地址，可以改变的。硬件地址是不可改变的</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#IP地址是总的起点和重点，而途中经过不同的许多地方为硬件地址"><span class="toc-number">1.0.2.3.2.</span> <span class="toc-text">IP地址是总的起点和重点，而途中经过不同的许多地方为硬件地址</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-地址解析协议ARP-通过给定的IP地址，解析出其对应的硬件地址"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">4.    地址解析协议ARP(通过给定的IP地址，解析出其对应的硬件地址)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#要点"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">要点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#使用ARP发送请求分组的四种典型问题（ARP代理）"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">使用ARP发送请求分组的四种典型问题（ARP代理）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-IP数据包的格式"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">5.    IP数据包的格式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#由首部和数据两部分组成"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">由首部和数据两部分组成</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-IP层转发分组的流程"><span class="toc-number">1.0.2.9.</span> <span class="toc-text">6.    IP层转发分组的流程</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#路由表中最重要的两个信息是（目的网络地址，下一跳地址）"><span class="toc-number">1.0.2.9.1.</span> <span class="toc-text">路由表中最重要的两个信息是（目的网络地址，下一跳地址）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#默认路由：当目的网络在路由表中找不到时，下一跳地址会走到默认路由"><span class="toc-number">1.0.2.9.2.</span> <span class="toc-text">默认路由：当目的网络在路由表中找不到时，下一跳地址会走到默认路由</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#路由转发算法：直连路由—-gt-特定路由—-gt-动态路由—-gt-默认路由"><span class="toc-number">1.0.2.9.3.</span> <span class="toc-text">路由转发算法：直连路由—&gt;特定路由—&gt;动态路由—&gt;默认路由</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、划分子网和构造超网"><span class="toc-number">1.0.3.</span> <span class="toc-text">三、划分子网和构造超网</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#从主机号借用若干位作为子网号subnet-id"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">从主机号借用若干位作为子网号subnet-id</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#子网掩码（用于判断划分的子网的位数）"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">子网掩码（用于判断划分的子网的位数）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#子网划分方法（全0和全1不使用）"><span class="toc-number">1.0.3.3.</span> <span class="toc-text">子网划分方法（全0和全1不使用）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#使用子网时分组的转发"><span class="toc-number">1.0.3.4.</span> <span class="toc-text">使用子网时分组的转发</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#判断连个IP是否属于同一个网络"><span class="toc-number">1.0.3.4.1.</span> <span class="toc-text">判断连个IP是否属于同一个网络</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#无分类的两级编址"><span class="toc-number">1.0.3.5.</span> <span class="toc-text">无分类的两级编址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#路由聚合（构成超网）"><span class="toc-number">1.0.3.6.</span> <span class="toc-text">路由聚合（构成超网）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#最长前缀匹配（匹配越长越具体）"><span class="toc-number">1.0.3.7.</span> <span class="toc-text">最长前缀匹配（匹配越长越具体）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#二叉树查找"><span class="toc-number">1.0.3.8.</span> <span class="toc-text">二叉树查找</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#四、网际控制报文协议ICMP"><span class="toc-number">1.0.4.</span> <span class="toc-text">四、网际控制报文协议ICMP</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#使用目的：为了更有地转发IP数据包和提高交付成功的机会"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">使用目的：为了更有地转发IP数据包和提高交付成功的机会</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ICMP报文的格式"><span class="toc-number">1.0.4.2.</span> <span class="toc-text">ICMP报文的格式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ICMP报文的种类"><span class="toc-number">1.0.4.3.</span> <span class="toc-text">ICMP报文的种类</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#差错检测报文（4种）"><span class="toc-number">1.0.4.3.1.</span> <span class="toc-text">差错检测报文（4种）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#询问报文（2种）"><span class="toc-number">1.0.4.3.2.</span> <span class="toc-text">询问报文（2种）</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ICMP的应用举例"><span class="toc-number">1.0.4.4.</span> <span class="toc-text">ICMP的应用举例</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#五、互联网的路由选择协议"><span class="toc-number">1.0.5.</span> <span class="toc-text">五、互联网的路由选择协议</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#有关路由选择协议的几个概念"><span class="toc-number">1.0.5.1.</span> <span class="toc-text">有关路由选择协议的几个概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#内部网关协议RIP"><span class="toc-number">1.0.5.2.</span> <span class="toc-text">内部网关协议RIP</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#内部网关协议OSPF"><span class="toc-number">1.0.5.3.</span> <span class="toc-text">内部网关协议OSPF</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#外部网关协议BGP（略）"><span class="toc-number">1.0.5.4.</span> <span class="toc-text">外部网关协议BGP（略）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#路由器的构成（略）"><span class="toc-number">1.0.5.5.</span> <span class="toc-text">路由器的构成（略）</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#六、IPv6"><span class="toc-number">1.0.6.</span> <span class="toc-text">六、IPv6</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#IPv6的基本首部（40字节，字段8个）"><span class="toc-number">1.0.6.1.</span> <span class="toc-text">IPv6的基本首部（40字节，字段8个）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#IPv6的地址"><span class="toc-number">1.0.6.2.</span> <span class="toc-text">IPv6的地址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#从IPv4向IPv6过度"><span class="toc-number">1.0.6.3.</span> <span class="toc-text">从IPv4向IPv6过度</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ICMPv6"><span class="toc-number">1.0.6.4.</span> <span class="toc-text">ICMPv6</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#七、IP多播"><span class="toc-number">1.0.7.</span> <span class="toc-text">七、IP多播</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#基本概念"><span class="toc-number">1.0.7.1.</span> <span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#网际组管理协议IGMP和多播路由选择协议"><span class="toc-number">1.0.7.2.</span> <span class="toc-text">网际组管理协议IGMP和多播路由选择协议</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#八、虚拟专用网VPN和网络地址转换NAT"><span class="toc-number">1.0.8.</span> <span class="toc-text">八、虚拟专用网VPN和网络地址转换NAT</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#虚拟专用网VPN"><span class="toc-number">1.0.8.1.</span> <span class="toc-text">虚拟专用网VPN</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#网络地址转换NAT（全球IP地址172-38-1-5）"><span class="toc-number">1.0.8.2.</span> <span class="toc-text">网络地址转换NAT（全球IP地址172.38.1.5）</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#九、对协议标记交换MPLS（提高网络层转发效率）"><span class="toc-number">1.0.9.</span> <span class="toc-text">九、对协议标记交换MPLS（提高网络层转发效率）</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -306,6 +615,8 @@
   
 
   
+
+
 
 
           </div>
@@ -332,7 +643,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

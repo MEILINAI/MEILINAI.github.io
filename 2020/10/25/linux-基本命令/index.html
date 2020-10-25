@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>newPage | MeiLinai</title>
+  <title>linux-基本命令 | MeiLinai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客">
-<meta name="keywords" content="小白博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="newPage">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;newPage&#x2F;index.html">
+  <meta name="description" content="linux基本命令">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux-基本命令">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;10&#x2F;25&#x2F;linux-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4&#x2F;index.html">
 <meta property="og:site_name" content="MeiLinai">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="linux基本命令">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-02T13:29:29.445Z">
+<meta property="og:updated_time" content="2020-10-25T13:10:09.679Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="MeiLinai" type="application/atom+xml">
@@ -149,27 +149,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-linux-基本命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      newPage
+      linux-基本命令
     </h1>
   
 
         
-        <a href="/newPage/index.html" class="archive-article-date">
-  	<time datetime="2019-12-02T13:29:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+        <a href="/2020/10/25/linux-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2020-10-25T12:44:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="linux基本命令"><a href="#linux基本命令" class="headerlink" title="linux基本命令"></a>linux基本命令<a id="more"></a></h4><h5 id="一、Linux的目录结构"><a href="#一、Linux的目录结构" class="headerlink" title="一、Linux的目录结构"></a>一、Linux的目录结构</h5><p>1、linux只有一个根目录   /<br>2、根下面采用层级式的目录结构：<br>     第一层目录（部分）<br>/root：系统管理员目录<br>/bin：√存放系统预装的可执行程序，这里存放的可执行文件可以在任何目录下执行<br>usr/local/bin：√存放用户自己的可执行文件的，同样这里存放的可执行文件可以在任何目录下执行<br>/etc：√存放所有系统管理所需的配置文件。配置环境变量（/etc/profile）<br>/home：√存放每个用户的根目录，名字一般为账户名，用户登录后默认在自己的根目录<br>/opt：√linux额外安装软件所存放的目录<br>/boot：存放启动Linux的一些核心文件，包括连接文件、镜像文件<br>/dev：存放linux的外部设备<br>/var：存放这不断扩充的东西，习惯存放经常被修改的文件，比如日志文件<br>/lib：存放系统最基本的动态连接共享库<br>/usr：linux的系统资源目录，存放系统可执行文件或系统依赖的文件库</p>
+<h5 id="二、Linux的远程操作"><a href="#二、Linux的远程操作" class="headerlink" title="二、Linux的远程操作"></a>二、Linux的远程操作</h5><p>1、Xshell：linux的终端模拟软件<br>2、Xftp：文件传输软件</p>
+<h5 id="三、vi和vim：linux中的文本编辑器，在linux中创建查看编辑文本文件"><a href="#三、vi和vim：linux中的文本编辑器，在linux中创建查看编辑文本文件" class="headerlink" title="三、vi和vim：linux中的文本编辑器，在linux中创建查看编辑文本文件"></a>三、vi和vim：linux中的文本编辑器，在linux中创建查看编辑文本文件</h5><p>vi和vim的三种模式：<br>一般模式：用vi或vim打开文件进入一般模式，只能看不能编辑<br>编辑模式：在一般模式下，按i或a进入编辑模式，可以编辑文本，但是不能保存<br>    编辑模式按Esc键回到一般模式<br>命令模式：在一般模式下，按shift+:进入命令模式，可输入的命令<br>q    退出编辑器<br>q!    不保存并强制退出编辑器<br>wq    保存并且退出编辑器<br>vi和vim常用快捷键：<br>1）复制当前行：<br>     在一般模式下，yy 复制光标所在的行，p  把yy复制的内容粘贴到光标下一行<br>2）复制当前行往下n行：<br>     一般模式下，按nyy，复制光标下n行，p把复制的内容粘贴到光标下一行<br>3）查找功能：<br>     在命令行模式下，输入 /关键字 ，回车<br>     按n光标会查找下一个关键字<br>4）删除光标所在行：<br>    一般模式dd<br>5）删除光标下n行：<br>     一般模式下ndd<br>6）撤销：<br>     一般模式下u<br>7）显示/关闭行号<br>     命令模式: 显示set nu    关闭set nonu</p>
+<h5 id="四、linux中的用户管理"><a href="#四、linux中的用户管理" class="headerlink" title="四、linux中的用户管理"></a>四、linux中的用户管理</h5><p>1）添加用户：useradd [-d 目录] 用户名<br>例如：useradd lisi 该命令执行后有以下操作<br>创建了一个lisi用户<br>在/home目录下创建了一个lisi目录<br>新建了一个lisi组，lisi用户属于这个组<br>2）给用户设置密码：passwd 用户名<br>3）删除用户：userdel 用户名<br>userdel -r 用户名    连同用户目录也删了<br>4）查看用户信息：id 用户名<br>5）切换用户：su 用户名  (su是switch user的意思）</p>
+<h5 id="五、linux中的组管理"><a href="#五、linux中的组管理" class="headerlink" title="五、linux中的组管理"></a>五、linux中的组管理</h5><p>1）创建组：groupadd 组名<br>2）删除组：groupdel 组名<br>3）组中添加用户：gpasswd -a 用户 组名<br>表示把用户添加到该组<br>4）组中移除用户：gpasswd -d 用户 组名<br>表示把用户从该组移除<br>5）创建用户时指定主组：<br>useradd -g 组名 用户名 </p>
+<h5 id="六、系统操作命令："><a href="#六、系统操作命令：" class="headerlink" title="六、系统操作命令："></a>六、系统操作命令：</h5><p>shutdown now 立即关机<br>shutdown -h xxx     xxx小时后关机<br>shutdown -r now 立即重启<br>reboot    立即重启<br>sync 同步数据库</p>
+<h5 id="七、linux中的帮助命令："><a href="#七、linux中的帮助命令：" class="headerlink" title="七、linux中的帮助命令："></a>七、linux中的帮助命令：</h5><p>1）显示某命令的用法：man 命令<br>2）查看内置帮助信息：help</p>
+<h5 id="八、文件和目录操作命令"><a href="#八、文件和目录操作命令" class="headerlink" title="八、文件和目录操作命令"></a>八、文件和目录操作命令</h5><p>1）查看当前所在目录：pwd<br>2）查看指定目录的内容：ls [-l、-a] [目录]<br>3）切换目录：cd 目录<br>绝对目录：从盘符开始的目录/        ~：当前用户的根目录<br>相对目录：以目录名开始的目录<br>..：当前目录的上一级目录<br>.：当前目录<br>4）创建目录：mkdir 目录名（相对或绝对）<br>一次创建多级目录 mkdir -p 目录名（相对或绝对）<br>5）创建一个或多个空文件：touch 文件名 文件名 ….<br>6）复制文件或空目录：cp source(源文件) dest(目标目录)<br>cp -r source(源文件) dest(目标目录)  把非空目录递归的复制到目标目录<br>7）删除空目录：rmdir 目录名<br>8）删除文件：rm  文件（带提示）<br>rm -f 文件（强制删除文件）<br>rm -rf 目录（强制递归删除目录）<br>9）移动文件或目录：mv source dest<br>重命名文件：mv 旧文件名 新文件名<br>10）查看文件内容：cat 文件名        文件内容一次性显示<br>cat -n 文件明    显示行号<br>11）分页查看文件内容：more 文件名    按回车翻一行，按空格翻一行<br>一次性加载所有内容到内存，分页显示<br>12）分页产看文件内容：less 文件名<br>分页加载文件到内存<br>13）查看文件的前10行：head [选项] 文件名<br>14）查看文件的后10行：tail [选项] 文件名<br>15）echo：输出系统该变量或者常量的值到命令行终端<br>echo $环境变量名<br>echo Hello World!    将Hello World！输出到终端<br>16）&gt;：向指定文件(不存在就创建)中填写前一个命令的输出结果<br>查看命令 &gt; 文件名</p>
+<h5 id="九、linux日期和时间的操作命令"><a href="#九、linux日期和时间的操作命令" class="headerlink" title="九、linux日期和时间的操作命令"></a>九、linux日期和时间的操作命令</h5><p>1）date 查看系统当前的日期和时间<br>date +%Y        系统当前年份<br>date +%m     系统当前月份<br>date +%d     系统当前日期<br>date ‘+%Y-%m-%d %H:%M%S’    按yyyy-MM-dd HH：mm：ss格式显示日期时间<br>date -s ‘yyyy-MM-dd HH：mm：ss’    设置当前的系统时间<br>2）查看日历<br>cal：查看当月的日历<br>cal 年份：查看该年的日历</p>
+<h5 id="十、搜索文件或目录"><a href="#十、搜索文件或目录" class="headerlink" title="十、搜索文件或目录"></a>十、搜索文件或目录</h5><p>1）find [范围目录] [搜索标准] 关键字或通配符<br>搜索标准：<br>-name    按名称搜索<br>-size    按大小搜索<br>-user    按文件所有者搜索<br>find [范围目录] -size +5M     搜索大于5M的文件<br>find [范围目录] -size -5M     搜索小于5M的文件<br>2）locate 指令：在整颗目录树中搜索文件或者目录，根据名称搜索，搜索效率更高，但实际使用效率不高<br>updatedb同步数据库<br>3）搜索过滤命令<br>将前一个搜索命令的结果按名称进一步过滤<br>搜索命令 |grep 过滤条件<br>例：<br>find *.txt | grep new<br>find /etc -size -5k | grep firefox<br>查看命令 |grep 过滤条件<br>例：<br>cat t1.text | grep [-i] beijing      -i 忽略大小写 加-n显示行号</p>
+<h5 id="十一、压缩和解压命令"><a href="#十一、压缩和解压命令" class="headerlink" title="十一、压缩和解压命令"></a>十一、压缩和解压命令</h5><p>1）<br>gzip 文件名：压缩文件，生成一个.gz的压缩包，并删除源文件<br>guzip 压缩包名：解压文件，生成源文件，并删除压缩包<br>2）<br>压缩打包多个文件和目录(不删除源文件)：<br>zip 目标压缩包名(后缀通常用.zip) 文件或目录列表(空格隔开)<br>解压多个文件和目录：<br>unzip 压缩包名 [-d 解压目录]：解压该压缩包到指定目录</p>
+<p>3）tar的习惯用法</p>
+<p>压缩打包：<br>tar -zcvf 目标压缩包名(xxx.tar.gz) 文件目录列表<br>解压：<br>tar -zxvf 压缩包名(xxx.tar.gz) [-C 解压到的目录]</p>
+<h5 id="十二、组管理命令"><a href="#十二、组管理命令" class="headerlink" title="十二、组管理命令"></a>十二、组管理命令</h5><h6 id="1）文件和目录必须且只能属于一个组；"><a href="#1）文件和目录必须且只能属于一个组；" class="headerlink" title="1）文件和目录必须且只能属于一个组；"></a>1）文件和目录必须且只能属于一个组；</h6><p>文件或目录通过组指定哪些用户可以对它进行哪些操作，即文件目录的访问权限；<br>对于文件或目录来说，把linux中所有用户分成三类：所有者、同组用户、其他组用户(不是前两者)</p>
+<h6 id="2）查看文件的所有者和所在的组：ls-l"><a href="#2）查看文件的所有者和所在的组：ls-l" class="headerlink" title="2）查看文件的所有者和所在的组：ls -l"></a>2）查看文件的所有者和所在的组：ls -l</h6><h6 id="3）修改文件或目录的所有者："><a href="#3）修改文件或目录的所有者：" class="headerlink" title="3）修改文件或目录的所有者："></a>3）修改文件或目录的所有者：</h6><p>chown 新的所有者 文件文件或目录<br>chown 新的所有者:新的组 文件或目录<br>chown -R 新的所有者:新的组    （-R把目录下的内容也一起改）<br>chgrp 新组名 文件目录    更改新的组</p>
+<h5 id="十三、权限管理"><a href="#十三、权限管理" class="headerlink" title="十三、权限管理"></a>十三、权限管理</h5><h6 id="1）文件或目录的三种权限：读-Read-、写-Write-、执行-Execute"><a href="#1）文件或目录的三种权限：读-Read-、写-Write-、执行-Execute" class="headerlink" title="1）文件或目录的三种权限：读(Read)、写(Write)、执行(Execute)"></a>1）文件或目录的三种权限：读(Read)、写(Write)、执行(Execute)</h6><p>对于文件：<br>读：可以读取、查看文件的内容，如：cat、more、less、head、tail等<br>写：可以编辑文件的内容，如：vi、vim等<br>执行：可以执行该可执行文件(.sh)<br>对于目录：<br>读：可以读取、查看目录下的内容，如：ls等<br>写：可以修改目录中的内容（创建、删除、重命名文件或目录）<br>执行：能否进入目录里边，如：cd</p>
+<h6 id="2）文件或者目录的权限控制："><a href="#2）文件或者目录的权限控制：" class="headerlink" title="2）文件或者目录的权限控制："></a>2）文件或者目录的权限控制：</h6><p>在linux中，任何一个文件或者目录都有三部分权限：所有者权限、同组用户权限、其他组用户权限</p>
+<h6 id="3）查看权限"><a href="#3）查看权限" class="headerlink" title="3）查看权限"></a>3）查看权限</h6><p>ls -aul    以人性化的方式列出所有文件目录</p>
+<h6 id="4）修改权限chmod"><a href="#4）修改权限chmod" class="headerlink" title="4）修改权限chmod"></a>4）修改权限chmod</h6><p>chomd u-w 文件名    u所有者-w表示去掉写的权限    g同组用户，+就是加权限 o其他组用户</p>
+<p>r、w、x     对应     读、写、执行</p>
+<p>u所有者、g同组、o其他组、a所偶</p>
+<p>用+、-、=分别表示增加、减少、设置对应的权限</p>
+<h5 id="十四、用数字的方式修改文件或目录权限"><a href="#十四、用数字的方式修改文件或目录权限" class="headerlink" title="十四、用数字的方式修改文件或目录权限"></a>十四、用数字的方式修改文件或目录权限</h5>
       
 
       
@@ -203,6 +225,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -253,7 +286,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/newPage/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/2020/10/25/linux-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,6 +298,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2020/10/25/git-%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          git-基础
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-5-%E8%BF%90%E8%BE%93%E5%B1%82/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">计算机网络-5-运输层</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -286,7 +338,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#linux基本命令"><span class="toc-number">1.</span> <span class="toc-text">linux基本命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#一、Linux的目录结构"><span class="toc-number">1.1.</span> <span class="toc-text">一、Linux的目录结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#二、Linux的远程操作"><span class="toc-number">1.2.</span> <span class="toc-text">二、Linux的远程操作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#三、vi和vim：linux中的文本编辑器，在linux中创建查看编辑文本文件"><span class="toc-number">1.3.</span> <span class="toc-text">三、vi和vim：linux中的文本编辑器，在linux中创建查看编辑文本文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#四、linux中的用户管理"><span class="toc-number">1.4.</span> <span class="toc-text">四、linux中的用户管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#五、linux中的组管理"><span class="toc-number">1.5.</span> <span class="toc-text">五、linux中的组管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#六、系统操作命令："><span class="toc-number">1.6.</span> <span class="toc-text">六、系统操作命令：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#七、linux中的帮助命令："><span class="toc-number">1.7.</span> <span class="toc-text">七、linux中的帮助命令：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#八、文件和目录操作命令"><span class="toc-number">1.8.</span> <span class="toc-text">八、文件和目录操作命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#九、linux日期和时间的操作命令"><span class="toc-number">1.9.</span> <span class="toc-text">九、linux日期和时间的操作命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#十、搜索文件或目录"><span class="toc-number">1.10.</span> <span class="toc-text">十、搜索文件或目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#十一、压缩和解压命令"><span class="toc-number">1.11.</span> <span class="toc-text">十一、压缩和解压命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#十二、组管理命令"><span class="toc-number">1.12.</span> <span class="toc-text">十二、组管理命令</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1）文件和目录必须且只能属于一个组；"><span class="toc-number">1.12.1.</span> <span class="toc-text">1）文件和目录必须且只能属于一个组；</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2）查看文件的所有者和所在的组：ls-l"><span class="toc-number">1.12.2.</span> <span class="toc-text">2）查看文件的所有者和所在的组：ls -l</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3）修改文件或目录的所有者："><span class="toc-number">1.12.3.</span> <span class="toc-text">3）修改文件或目录的所有者：</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#十三、权限管理"><span class="toc-number">1.13.</span> <span class="toc-text">十三、权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1）文件或目录的三种权限：读-Read-、写-Write-、执行-Execute"><span class="toc-number">1.13.1.</span> <span class="toc-text">1）文件或目录的三种权限：读(Read)、写(Write)、执行(Execute)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2）文件或者目录的权限控制："><span class="toc-number">1.13.2.</span> <span class="toc-text">2）文件或者目录的权限控制：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3）查看权限"><span class="toc-number">1.13.3.</span> <span class="toc-text">3）查看权限</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4）修改权限chmod"><span class="toc-number">1.13.4.</span> <span class="toc-text">4）修改权限chmod</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#十四、用数字的方式修改文件或目录权限"><span class="toc-number">1.14.</span> <span class="toc-text">十四、用数字的方式修改文件或目录权限</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -306,6 +358,8 @@
   
 
   
+
+
 
 
           </div>
@@ -332,7 +386,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

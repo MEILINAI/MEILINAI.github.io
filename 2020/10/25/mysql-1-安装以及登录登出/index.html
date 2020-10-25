@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>newPage | MeiLinai</title>
+  <title>mysql-1-安装以及登录登出 | MeiLinai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客">
-<meta name="keywords" content="小白博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="newPage">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;newPage&#x2F;index.html">
+  <meta name="description" content="MySQL安装以及登录等处">
+<meta name="keywords" content="mysql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql-1-安装以及登录登出">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;10&#x2F;25&#x2F;mysql-1-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%99%BB%E5%BD%95%E7%99%BB%E5%87%BA&#x2F;index.html">
 <meta property="og:site_name" content="MeiLinai">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="MySQL安装以及登录等处">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-02T13:29:29.445Z">
+<meta property="og:updated_time" content="2020-10-25T13:10:16.731Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="MeiLinai" type="application/atom+xml">
@@ -149,27 +149,85 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-mysql-1-安装以及登录登出" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      newPage
+      mysql-1-安装以及登录登出
     </h1>
   
 
         
-        <a href="/newPage/index.html" class="archive-article-date">
-  	<time datetime="2019-12-02T13:29:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+        <a href="/2020/10/25/mysql-1-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%99%BB%E5%BD%95%E7%99%BB%E5%87%BA/" class="archive-article-date">
+  	<time datetime="2020-10-25T12:55:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="MySQL安装以及登录等处"><a href="#MySQL安装以及登录等处" class="headerlink" title="MySQL安装以及登录等处"></a>MySQL安装以及登录等处<a id="more"></a></h4><ul>
+<li><h5 id="MySQL的安装"><a href="#MySQL的安装" class="headerlink" title="MySQL的安装"></a>MySQL的安装</h5></li>
+</ul>
+<ol>
+<li>下载压缩包，以下命令都是bin下执行，当然配置了环境变量就不用</li>
+<li>初始化：mysqld–initialize-insecure–user=mysql（<em><code>注意这里一定要等他完成</code></em>）</li>
+<li>注册服务：mysqld -install  mysql（后面的mysql是服务名）</li>
+<li>启动服务：net start mysql</li>
+<li>mysql -u root -p无密码登录</li>
+<li>更改密码：ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘123456’;</li>
+</ol>
+<ul>
+<li><h5 id="MySQL命令"><a href="#MySQL命令" class="headerlink" title="MySQL命令"></a>MySQL命令</h5><ul>
+<li>登录</li>
+</ul>
+<p>mysql [-h 数据库服务地址(本机可省略)] -u 用户名 -p 密码</p>
+<ul>
+<li>退出命令（三个）</li>
+</ul>
+<p>\q、exit、quit</p>
+<h6 id="g命令执行符、-h或者help获得帮助、-c清楚等待命令"><a href="#g命令执行符、-h或者help获得帮助、-c清楚等待命令" class="headerlink" title="\g命令执行符、\h或者help获得帮助、\c清楚等待命令"></a>\g命令执行符、\h或者help获得帮助、\c清楚等待命令</h6></li>
+<li><h5 id="MySql常见符号"><a href="#MySql常见符号" class="headerlink" title="MySql常见符号"></a>MySql常见符号</h5><ul>
+<li><h6 id="常见符号"><a href="#常见符号" class="headerlink" title="常见符号"></a>常见符号</h6></li>
+</ul>
+<ol>
+<li>—&gt;表示当前命令执行符正在等待确认，按；确认，\c清除</li>
+<li>‘&gt;表示当前sql命令缺少单引号，给个单引号回车结束</li>
+<li>’‘&gt;表示当前Sql命令缺少双引号，给个双引号回车结束</li>
+</ol>
+<ul>
+<li>修改MySQL提示符（prompt）</li>
+</ul>
+<ol>
+<li>\D    完整的日期</li>
+<li>\d     当前数据库</li>
+<li>\h     服务器名称</li>
+<li>\u     当前用户</li>
+</ol>
+</li>
+<li><h5 id="SQL语句介绍及编码规范"><a href="#SQL语句介绍及编码规范" class="headerlink" title="SQL语句介绍及编码规范"></a>SQL语句介绍及编码规范</h5><ul>
+<li>4类</li>
+</ul>
+<ol>
+<li>DDL    数据库定义语言</li>
+<li>DML   数据库操纵语言</li>
+<li>DQL    数据库查询语言</li>
+<li>DCL     数据库控制语言</li>
+</ol>
+<ul>
+<li>编码规范</li>
+</ul>
+<ol>
+<li>关键字与函数全部大写</li>
+<li>数据库名、表名、字段名全部小写</li>
+<li>SQL语句必须以分号结尾</li>
+</ol>
+</li>
+</ul>
+
       
 
       
@@ -203,6 +261,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">mysql</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -253,7 +322,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/newPage/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/2020/10/25/mysql-1-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%99%BB%E5%BD%95%E7%99%BB%E5%87%BA/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,6 +334,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2020/10/25/mysql-2-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          mysql-2-基础命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/25/git-%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git-基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -286,7 +374,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#MySQL安装以及登录等处"><span class="toc-number">1.</span> <span class="toc-text">MySQL安装以及登录等处</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL的安装"><span class="toc-number">1.1.</span> <span class="toc-text">MySQL的安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL命令"><span class="toc-number">1.2.</span> <span class="toc-text">MySQL命令</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#g命令执行符、-h或者help获得帮助、-c清楚等待命令"><span class="toc-number">1.2.1.</span> <span class="toc-text">\g命令执行符、\h或者help获得帮助、\c清楚等待命令</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySql常见符号"><span class="toc-number">1.3.</span> <span class="toc-text">MySql常见符号</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#常见符号"><span class="toc-number">1.3.1.</span> <span class="toc-text">常见符号</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SQL语句介绍及编码规范"><span class="toc-number">1.4.</span> <span class="toc-text">SQL语句介绍及编码规范</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -306,6 +394,8 @@
   
 
   
+
+
 
 
           </div>
@@ -332,7 +422,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

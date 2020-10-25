@@ -6,18 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>newPage | MeiLinai</title>
+  <title>mysql-2-基础命令 | MeiLinai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客">
-<meta name="keywords" content="小白博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="newPage">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;newPage&#x2F;index.html">
+  <meta name="description" content="MySql基础命令">
+<meta name="keywords" content="mysql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql-2-基础命令">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;10&#x2F;25&#x2F;mysql-2-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4&#x2F;index.html">
 <meta property="og:site_name" content="MeiLinai">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="MySql基础命令">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-02T13:29:29.445Z">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024132853727.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024133643864.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134151888.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024155729355.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024161216109.png">
+<meta property="og:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024161959501.png">
+<meta property="og:updated_time" content="2020-10-25T13:10:24.481Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024132853727.png">
   
     <link rel="alternative" href="/atom.xml" title="MeiLinai" type="application/atom+xml">
   
@@ -149,27 +156,130 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-mysql-2-基础命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      newPage
+      mysql-2-基础命令
     </h1>
   
 
         
-        <a href="/newPage/index.html" class="archive-article-date">
-  	<time datetime="2019-12-02T13:29:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+        <a href="/2020/10/25/mysql-2-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2020-10-25T12:58:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="MySql基础命令"><a href="#MySql基础命令" class="headerlink" title="MySql基础命令"></a>MySql基础命令<a id="more"></a></h4><h4 id="一、常用命令以及建库语句"><a href="#一、常用命令以及建库语句" class="headerlink" title="一、常用命令以及建库语句"></a>一、常用命令以及建库语句</h4><ol>
+<li>查看服务器版本：SELECT VERSION();</li>
+<li>现实当前用户：SELECT USER();</li>
+<li>显示当前时间：SELECT NOW();</li>
+</ol>
+<p>建库语句</p>
+<p>CREATE{DATABASE | SCHEMA} [IF NOT EXISTS] db_NAME [DEFAULT] CHARACTER SET [=] charset name</p>
+<p>查看数据库</p>
+<p>SHOW DATABASES</p>
+<p>显示数据库常见命令</p>
+<p>SHOW CREATE DATABASE db_name;</p>
+<p>修改数据库</p>
+<p>ALTER {DATABASE|SCHEMA} [db_name] [DEFAULT] CHARACTER SET [=] charset_name</p>
+<p>删除数据库</p>
+<p>DROP {DATABASE|SCHEMA} [IF EXISTS] db_name</p>
+<p>显示上一条警告</p>
+<p>SHOW WARNINGS</p>
+<h4 id="二、MySQL数据类型以及表的操作"><a href="#二、MySQL数据类型以及表的操作" class="headerlink" title="二、MySQL数据类型以及表的操作"></a>二、MySQL数据类型以及表的操作</h4><ul>
+<li><h5 id="MySQL基础数据类型"><a href="#MySQL基础数据类型" class="headerlink" title="MySQL基础数据类型"></a>MySQL基础数据类型</h5><ol>
+<li><p>数值类型</p>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024132853727.png" alt=""></p>
+</li>
+<li><p>日期和时间类型</p>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024133643864.png" alt="image-20201024133643864"></p>
+</li>
+<li><p>字符串类型</p>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134151888.png" alt="image-20201024134151888"></p>
+</li>
+</ol>
+</li>
+<li><h5 id="MySQL表操作之建表"><a href="#MySQL表操作之建表" class="headerlink" title="MySQL表操作之建表"></a>MySQL表操作之建表</h5><ol>
+<li><p>打开数据库：USE db_name</p>
+</li>
+<li><p>查看当前所在的数据库：SELECT DATABASE()</p>
+</li>
+<li><p>创建表</p>
+<p>CREATE TABLE [IF NOT EXISTS] table_name(</p>
+<p>​    column_name1 data_type,</p>
+<p>​    column_name2 data_type,</p>
+<p>​    ……</p>
+<p>) [ENGINE=表引擎 [DEFAULT] CHARSET=utf8]</p>
+</li>
+</ol>
+<p>表引擎：InnoDB、MyISAM</p>
+<p>​    4.查看键表语句:    SHOW CREATE TABLE 表名</p>
+</li>
+<li><h5 id="MySQL表操作之查看"><a href="#MySQL表操作之查看" class="headerlink" title="MySQL表操作之查看"></a>MySQL表操作之查看</h5><ol>
+<li><p>查看表：SHOW TABLES [FROM db_name]</p>
+</li>
+<li><p>查看表结构：</p>
+<p>DESC table_name</p>
+<p>或    SHOW COLUMNS FORM table_name</p>
+</li>
+</ol>
+</li>
+<li><h5 id="MySQL表操作之记录的操作与查找"><a href="#MySQL表操作之记录的操作与查找" class="headerlink" title="MySQL表操作之记录的操作与查找"></a>MySQL表操作之记录的操作与查找</h5><ol>
+<li><p>插入数据：</p>
+<p>INSET [INTO] table_name [(col_name,…)] VALUES(val,…)</p>
+</li>
+<li><p>查找数据</p>
+<p>SELECT * FROM table_name</p>
+<p>SELECT col_name,… FROM table_name</p>
+</li>
+</ol>
+</li>
+<li><h5 id="严格模式的关闭和打开"><a href="#严格模式的关闭和打开" class="headerlink" title="严格模式的关闭和打开"></a>严格模式的关闭和打开</h5><ol>
+<li>打开严格模式：SET sql_mode=’TRADITIONAL’</li>
+<li>关闭严格模式：SET sql_mode=’’</li>
+</ol>
+</li>
+<li><h5 id="MySQL字段约束（加在字段后面）"><a href="#MySQL字段约束（加在字段后面）" class="headerlink" title="MySQL字段约束（加在字段后面）"></a>MySQL字段约束（加在字段后面）</h5><ol>
+<li>UNSIGNED：让数值类型不允许出现负数</li>
+<li>ZEROFILL：数值类型位数不足时自动在前面补0，并且时UNSIGNED</li>
+<li>AUTO_INCREMENT：让数值自增，配合主键一起使用</li>
+<li>NULL和NOT NULL：NULL表示值可以位空，NOT NULL表示值不能为空</li>
+<li>DEFAULT：没有设置值的字段使用该指定的默认值，DEFAULT ‘默认值’</li>
+</ol>
+</li>
+<li><h5 id="MySQL主键约束"><a href="#MySQL主键约束" class="headerlink" title="MySQL主键约束"></a>MySQL主键约束</h5><p>​    PRIMARY KEY，每个表只有一个主键，NOT NULL。ATUO_INCREMETN必须和PRIMARY KEY一起使用</p>
+</li>
+<li><h5 id="MySQL唯一键约束"><a href="#MySQL唯一键约束" class="headerlink" title="MySQL唯一键约束"></a>MySQL唯一键约束</h5><p>​    UNIQUE KEY，保证记录的唯一性，NULL，每张数据表可以存在多个唯一约束</p>
+</li>
+<li><h5 id="MySQL外键约束"><a href="#MySQL外键约束" class="headerlink" title="MySQL外键约束"></a>MySQL外键约束</h5><p>​    FOREIGN KEY (外键列) REFERENCES 父表 (参照列)</p>
+<p>​    要求：</p>
+<ol>
+<li>父表和子表必须使用相同存储引擎InnoDB，禁止使用临时表</li>
+<li>外键列和参照列必须具有相似的数据类型。数字长度和是否有符号位必须相同，字符长度可以不同</li>
+<li>外键列和参照列必选创建索引。如果外键列不存在索引，mysql会自动创建索引</li>
+<li>查看索引命令：SHOW INDEXES FROM tab_name</li>
+</ol>
+<p>外键约束的参照操作</p>
+<ol>
+<li>ON UPDATE|DELETE CASCADE    表示父表更新或删除,子表也更新和删除</li>
+<li>SET NULL:  从父表删除或更新行时,子表外键列别设置位null(前提是该列不能设置位not null)</li>
+<li>RESTRICT:  拒绝对父表的删除或更新操作</li>
+<li>NO ACTION:  标准的sql关键字,在mysql中与RESTRICT相同</li>
+</ol>
+</li>
+<li><h5 id="MySQL字段操作"><a href="#MySQL字段操作" class="headerlink" title="MySQL字段操作"></a>MySQL字段操作</h5><p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024155729355.png" alt="image-20201024155729355"></p>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024161216109.png" alt="image-20201024161216109"></p>
+<p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024161959501.png" alt="image-20201024161959501"></p>
+</li>
+</ul>
+<h4 id="三、MySQL8中操作数据表的记录"><a href="#三、MySQL8中操作数据表的记录" class="headerlink" title="三、MySQL8中操作数据表的记录"></a>三、MySQL8中操作数据表的记录</h4>
       
 
       
@@ -203,6 +313,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">mysql</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -253,7 +374,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/newPage/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://MEILINAI.github.io/2020/10/25/mysql-2-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,6 +386,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2020/10/25/mysql-1-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%99%BB%E5%BD%95%E7%99%BB%E5%87%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">mysql-1-安装以及登录登出</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -286,7 +417,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#MySql基础命令"><span class="toc-number">1.</span> <span class="toc-text">MySql基础命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一、常用命令以及建库语句"><span class="toc-number">2.</span> <span class="toc-text">一、常用命令以及建库语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、MySQL数据类型以及表的操作"><span class="toc-number">3.</span> <span class="toc-text">二、MySQL数据类型以及表的操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL基础数据类型"><span class="toc-number">3.1.</span> <span class="toc-text">MySQL基础数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL表操作之建表"><span class="toc-number">3.2.</span> <span class="toc-text">MySQL表操作之建表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL表操作之查看"><span class="toc-number">3.3.</span> <span class="toc-text">MySQL表操作之查看</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL表操作之记录的操作与查找"><span class="toc-number">3.4.</span> <span class="toc-text">MySQL表操作之记录的操作与查找</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#严格模式的关闭和打开"><span class="toc-number">3.5.</span> <span class="toc-text">严格模式的关闭和打开</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL字段约束（加在字段后面）"><span class="toc-number">3.6.</span> <span class="toc-text">MySQL字段约束（加在字段后面）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL主键约束"><span class="toc-number">3.7.</span> <span class="toc-text">MySQL主键约束</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL唯一键约束"><span class="toc-number">3.8.</span> <span class="toc-text">MySQL唯一键约束</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL外键约束"><span class="toc-number">3.9.</span> <span class="toc-text">MySQL外键约束</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL字段操作"><span class="toc-number">3.10.</span> <span class="toc-text">MySQL字段操作</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、MySQL8中操作数据表的记录"><span class="toc-number">4.</span> <span class="toc-text">三、MySQL8中操作数据表的记录</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -306,6 +437,8 @@
   
 
   
+
+
 
 
           </div>
@@ -332,7 +465,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
